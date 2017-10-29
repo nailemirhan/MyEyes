@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kullanici_oturum_acma"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yazilimindunyasi.www.myeyes.GonulluOturumAcma">
+
+    <TextView
+        android:text="Gönüllü"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelKullaniciTipi"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_below="@+id/labelSoz"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="İhtiyaç sahiplerine yardım etmek, insanlığa emek vermektir."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelSoz"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:layout_marginTop="13dp"
+        android:textSize="22sp"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Kayıt Ol"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_KayitOl"
+        android:background="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="KayitOl" />
+
+    <Button
+        android:text="GİRİŞ YAP"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_GirisYap"
+        android:background="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/btn_KayitOl"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/oturummisket"
+        android:id="@+id/imageView6"
+        android:layout_width="300dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

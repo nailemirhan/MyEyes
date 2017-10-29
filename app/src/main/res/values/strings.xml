@@ -1,0 +1,14 @@
+<resources>
+    <string name="App_Name">Our Eyes</string>
+    <string name="IlkGiris_SozlesmeBasligi">En iyi ve güvenilir hizmeti sağlamak için Gizlilik Politikamızı ve Hizmet Şartlarımızı kabul etmeniz gerekmektedir.</string>
+
+    <string name="GecersizEmail">Geçersiz bir email girdiniz!</string>
+    <string name="GecersizSifre">Geçersiz bir şifre girdiniz!</string>
+    <string name="title_activity_gonullu_anasayfa">Anasayfa</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

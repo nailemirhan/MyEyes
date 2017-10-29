@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gonullu_giris_yap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yazilimindunyasi.www.myeyes.GonulluGirisYap">
+
+    <Button
+        android:text="GOOGLE HESABIN İLE GİRİŞ YAP"
+        android:layout_width="match_parent"
+        android:id="@+id/button6"
+        android:background="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txt_Sifre"
+        android:hint="Şifre"
+        android:layout_below="@+id/txt_Email"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:textColorLink="@color/colorButton" />
+
+    <TextView
+        android:text="ya da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView9"
+        android:textSize="18sp"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Şifremi Unuttum"
+        android:layout_width="match_parent"
+        android:id="@+id/button5"
+        android:background="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="SifremiUnuttum" />
+
+    <Button
+        android:text="Oturum Aç"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_OturumAc"
+        android:background="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/button5"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="68dp"
+        android:id="@+id/txt_Email"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:hint="Lütfen Email Adresi Giriniz"
+        android:textColorLink="@color/colorButton"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

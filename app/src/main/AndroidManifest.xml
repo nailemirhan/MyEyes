@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yazilimindunyasi.www.myeyes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/App_Name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".IlkGiris">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KullaniciTercihi" />
+        <activity android:name=".GonulluOturumAcma" />
+        <activity android:name=".GonulluGirisYap" />
+        <activity android:name=".SifremiUnuttum" />
+        <activity android:name=".GonulluKayitOl" />
+        <activity android:name=".GormeEngelliKayitOl" />
+        <activity android:name=".GormeEngelliOturumAcma" />
+        <activity android:name=".GormeEngelliGirisYap" />
+        <activity
+            android:name=".GonulluAnasayfa"
+            android:label="@string/title_activity_gonullu_anasayfa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GonulluCagriYanitlamayiOgren" />
+        <activity android:name=".GormeEngelliAnasayfa"></activity>
+    </application>
+
+</manifest>

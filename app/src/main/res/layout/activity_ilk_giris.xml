@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ilk_giris"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yazilimindunyasi.www.myeyes.IlkGiris">
+
+    <ImageView
+        android:layout_width="180dp"
+        app:srcCompat="@drawable/shield"
+        android:id="@+id/imageView"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="180dp" />
+
+    <TextView
+        android:text="Hizmet Sözleşmesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Gizlilik Politikası"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:onClick="onBrowserSozlesme"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:text="@string/IlkGiris_SozlesmeBasligi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="29dp"
+        android:textSize="15sp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Okudum ve Onaylıyorum"
+        android:layout_width="match_parent"
+        android:id="@+id/button"
+        android:background="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textStyle="normal|bold"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="KullaniciTercihineGec" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_marginBottom="191dp"
+        android:id="@+id/button9"
+        android:onClick="Anasayfa" />
+
+</RelativeLayout>
