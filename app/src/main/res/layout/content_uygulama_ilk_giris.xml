@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_ilk_giris"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yazilimindunyasi.www.myeyes.IlkGiris">
-
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yazilimindunyasi.www.myeyes.UygulamaIlkGiris"
+    tools:showIn="@layout/activity_uygulama_ilk_giris">
     <ImageView
         android:layout_width="180dp"
         app:srcCompat="@drawable/shield"
@@ -24,11 +20,10 @@
         android:text="Hizmet Sözleşmesi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_HizmetSozlesmesi"
+        android:id="@+id/textView6"
         android:textColor="@android:color/holo_blue_dark"
         android:textStyle="normal|bold"
         android:textSize="18sp"
-        android:onClick="onBrowserHizmetSozlesmesi"
         android:layout_marginTop="23dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
@@ -37,16 +32,15 @@
         android:text="Gizlilik Politikası"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_GizlilikPolitikasi"
-        android:onClick="onBrowserGizlilikSozlesmesi"
+        android:id="@+id/textView4"
+        android:onClick="onBrowserSozlesme"
         android:textColor="@android:color/holo_blue_dark"
         android:textStyle="normal|bold"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:layout_below="@+id/btn_HizmetSozlesmesi"
+        android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        />
+        android:layout_marginTop="22dp" />
 
     <TextView
         android:text="@string/IlkGiris_SozlesmeBasligi"
@@ -74,24 +68,4 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:onClick="KullaniciTercihineGec" />
-
-    <ImageView
-        android:id="@+id/HizmetEmoji"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignRight="@id/btn_HizmetSozlesmesi"
-        android:layout_alignTop="@id/btn_HizmetSozlesmesi"
-        android:layout_marginEnd="-30dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/yanlisisareti" />
-
-    <ImageView
-        android:id="@+id/GizlilikEmoji"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_alignRight="@id/btn_GizlilikPolitikasi"
-        android:layout_alignTop="@id/btn_GizlilikPolitikasi"
-        android:layout_marginEnd="-30dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/yanlisisareti" />
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
